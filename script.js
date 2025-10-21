@@ -29,4 +29,8 @@ window.Dog = Dog;
 window.Cat = Cat;
 const myCat = new Cat("Siamese");
 myCat.makeSound();
+const species="Golden Retriever";
+const myDog = new Dog(species)
+myDog.makeSound();
+myDog.bark();
 
