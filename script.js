@@ -12,14 +12,18 @@ class Animal {
 }
 
 class Dog extends Animal {
-	super(species)
+	constructor(species){
+		super(species)
+	}
 	bark(){
 		return `woof`;
 	}
 }
 
 class Cat extends Animal {
-	super(species)
+	constructor(species){
+		super(species)
+	}
 	purr(){
 		return `purr`;
 	}
