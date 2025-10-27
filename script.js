@@ -16,7 +16,7 @@ class Dog extends Animal {
 	// 	super(species)
 	// }
 	bark(){
-		return `woof`;
+		console.log(`woof`);
 	}
 }
 
@@ -25,7 +25,7 @@ class Cat extends Animal {
 	// 	super(species)
 	// }
 	purr(){
-		return `purr`;
+		console.log(`purr`);
 	}
 }
 
@@ -35,10 +35,10 @@ window.Dog = Dog;
 window.Cat = Cat;
 const species = "Siamese"
 const myCat = new Cat(species);
-console.log(myCat.makeSound());
-console.log(myCat.purr())
+myCat.makeSound();
+myCat.purr();
 const dogspecies="Golden Retriever";
 const myDog = new Dog(dogspecies)
-console.log(myDog.makeSound());
-console.log(myDog.bark());
+myDog.makeSound();
+myDog.bark();
 
